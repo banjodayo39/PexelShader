@@ -12,10 +12,20 @@ let package = Package(
             targets: ["PexelShader"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "PexelShader"),
+                name: "PexelShaderObjc",
+                publicHeadersPath: "include",
+                cSettings: [
+                    .headerSearchPath("include")
+                ]
+            ),
+            .target(
+                name: "PexelShader",
+                dependencies: ["PexelShaderObjc"],
+                resources: [
+                    .copy("Shaders")
+                ]
+            ),
         .testTarget(
             name: "PexelShaderTests",
             dependencies: ["PexelShader"]),
