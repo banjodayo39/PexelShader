@@ -8,6 +8,7 @@
 
 import CoreMedia
 import AVFoundation
+import PexelShaderObjc
 
 /// Defines image consumer behaviors
 public protocol BBMetalImageConsumer: AnyObject {

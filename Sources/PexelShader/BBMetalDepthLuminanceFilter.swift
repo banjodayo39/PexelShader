@@ -7,6 +7,7 @@
 //
 
 import Metal
+import PexelShaderObjc
 
 /// Converts depth data to grayscale
 public class BBMetalDepthLuminanceFilter: BBMetalBaseFilter {
