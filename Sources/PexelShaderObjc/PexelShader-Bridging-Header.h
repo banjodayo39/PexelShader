@@ -10,5 +10,8 @@
 
 #import BBMetalShaderTypes
 #import minMaxFromBuffer
+#import <AVFoundation/AVFoundation.h>
+#import <simd/simd.h>
+#import "minMaxFromBuffer.h"
 
 #endif /* Header_h */
